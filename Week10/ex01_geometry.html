@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tính toán Hình học</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { border: 1px solid #ccc; padding: 15px; width: 350px; margin-bottom: 20px; }
+        h3 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Hình Chữ Nhật</h3>
+        Chiều dài: <input type="number" id="length"><br><br>
+        Chiều rộng: <input type="number" id="width"><br><br>
+        <button onclick="calcRectangle()">Tính toán</button>
+        <p id="resRect"></p>
+    </div>
+
+    <div class="container">
+        <h3>Hình Tròn (π = 3.14)</h3>
+        Bán kính: <input type="number" id="radius"><br><br>
+        <button onclick="calcCircle()">Tính toán</button>
+        <p id="resCircle"></p>
+    </div>
+
+    <script>
+        function calcRectangle() {
+            let l = parseFloat(document.getElementById('length').value);
+            let w = parseFloat(document.getElementById('width').value);
+            if (isNaN(l) || isNaN(w)) {
+                document.getElementById('resRect').innerHTML = "Vui lòng nhập số!";
+                return;
+            }
+            let perimeter = (l + w) * 2;
+            let area = l * w;
+            document.getElementById('resRect').innerHTML = `Chu vi: ${perimeter} | Diện tích: ${area}`;
+        }
+
+        function calcCircle() {
+            let r = parseFloat(document.getElementById('radius').value);
+            const PI = 3.14;
+            if (isNaN(r)) {
+                document.getElementById('resCircle').innerHTML = "Vui lòng nhập số!";
+                return;
+            }
+            let perimeter = 2 * PI * r;
+            let area = PI * r * r;
+            document.getElementById('resCircle').innerHTML = `Chu vi: ${perimeter.toFixed(2)} | Diện tích: ${area.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
