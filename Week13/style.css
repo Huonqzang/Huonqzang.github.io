@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.registration-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.title {
+    color: #800000; /* Màu đỏ đô */
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.form-group label {
+    width: 150px;
+    color: #4682B4; /* Màu xanh steel blue */
+    font-weight: normal;
+}
+
+input[type="text"], 
+input[type="password"], 
+select {
+    padding: 3px;
+    border: 1px solid #999;
+}
+
+.short-input {
+    width: 60px;
+}
+
+.hint {
+    color: #4682B4;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.inline-group {
+    display: flex;
+    gap: 20px;
+}
+
+.inline-group .field {
+    display: flex;
+    align-items: center;
+}
+
+.inline-group label {
+    width: auto;
+    margin-right: 10px;
+}
+
+.label-blue {
+    color: #4682B4;
+    margin-left: 10px;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 150px;
+    gap: 5px;
+}
+
+.interests-grid label {
+    font-size: 14px;
+    color: #4682B4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-btn {
+    background: linear-gradient(to bottom, #d32f2f, #800000);
+    color: white;
+    border: 2px solid #fff;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.register-btn:hover {
+    opacity: 0.9;
+}

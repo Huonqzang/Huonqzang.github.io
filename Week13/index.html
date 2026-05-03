@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="registration-container">
+        <h2 class="title">REGISTRATION</h2>
+        <hr>
+
+        <form action="#">
+            <!-- Section 1: Account Info -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="re-password">Re-type Password:</label>
+                <input type="password" id="re-password" name="re-password">
+            </div>
+
+            <hr>
+
+            <!-- Section 2: Personal Details -->
+            <div class="form-group">
+                <label>Birthday:</label>
+                <div class="birthday-inputs">
+                    <select name="month">
+                        <option value="">[select one]</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <!-- Thêm các tháng khác tại đây -->
+                    </select> ,
+                    <input type="text" name="day" class="short-input"> ,
+                    <input type="text" name="year" class="short-input">
+                    <span class="hint">(Month Day, Year)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Images:</label>
+                <input type="file" name="images">
+            </div>
+
+            <hr>
+
+            <!-- Section 3: Name -->
+            <div class="form-group inline-group">
+                <div class="field">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="field">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Section 4: Interests -->
+            <div class="interests-section">
+                <p class="label-blue">Interests (optional):</p>
+                <div class="interests-grid">
+                    <label><input type="checkbox"> Entertainment</label>
+                    <label><input type="checkbox"> Business</label>
+                    <label><input type="checkbox"> Home & Family</label>
+                    <label><input type="checkbox"> Computers & Technology</label>
+                    <label><input type="checkbox"> Health</label>
+                    <label><input type="checkbox"> Personal Finance</label>
+                    <label><input type="checkbox"> Music</label>
+                    <label><input type="checkbox"> Small Business</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Submit Button -->
+            <div class="button-container">
+                <button type="submit" class="register-btn">REGISTER</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
